@@ -12,6 +12,7 @@ import Home from '../Home/HomePage';
 import Login from '../Home/login';
 import sousProduct from '../Home/SousCaty';
 import Payment from '../Home/Payment';
+import CheckOut from '../Home/CheckOut';
 import test from '../text';
 // ______________SUPERADMIN__________________
 //Admins
@@ -48,7 +49,7 @@ function Routes() {
       <Switch> 
       {/* // ______________Client Route__________________ */}
       <Route  path="/loginpage" exact component={loginpage}/> 
-
+<PrivateRouteClient  path="/Home/CheckOut" exact component={CheckOut}/> 
 
 
 
