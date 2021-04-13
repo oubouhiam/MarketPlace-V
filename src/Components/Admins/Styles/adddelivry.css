@@ -1,0 +1,167 @@
+
+ .left {
+    float: left;
+}
+.right {
+    float: right;
+}
+@media (max-width: 35em) {
+    .left, .right {
+        float: left;
+        clear: left;
+   }
+}
+.formdelevery {
+    width: 0;
+    height: 0;
+    margin-left: 5%;
+    background: rebeccapurple;
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+    transition: height 0.5s ease, width 0.5s ease 0.5s;
+}
+.formdelevery h2 {
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    margin: 1.5rem 0 3rem;
+}
+.formdelevery form {
+    max-height: 100%;
+    height: auto;
+    margin-top: 11%;
+}
+@media (max-width: 35em) {
+    .formdelevery form {
+        height: auto;
+   }
+}
+.formdelevery .section {
+    width: 40%;
+    margin: 0 5%;
+    height: calc(100% - 5rem);
+    max-height: 100%;
+    margin-left: 29%;
+}
+@media (max-width: 35em) {
+    .formdelevery .section {
+        width: 90%;
+        height: auto;
+   }
+}
+.formdelevery ::-webkit-input-placeholder, .formdelevery :-moz-placeholder, .formdelevery ::-moz-placeholder, .formdelevery :-ms-input-placeholder {
+    background-color: #000;
+}
+.formdelevery input[type="text"],select, .formdelevery input[type="email"], .formdelevery input[type="tel"], .formdelevery textarea {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: inherit;
+    color: #000;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    color: #000;
+    transition: border-color 0.5s ease;
+    font-size: 20px;
+}
+.formdelevery input[type="text"]:focus, .formdelevery input[type="email"]:focus,.formdelevery.select, .formdelevery input[type="tel"]:focus, .formdelevery textarea:focus {
+    border-color: #000;
+}
+.formdelevery input[type="text"]::invalid, .formdelevery input[type="email"]::invalid, .formdelevery.select::invalid,.formdelevery input[type="tel"]::invalid, .formdelevery textarea::invalid {
+    border-color: #b31b1b;
+}
+.formdelevery input[type="text"], .formdelevery input[type="email"], .formdelevery input[type="tel"] {
+    height: 5.5rem;
+    margin-bottom: 2rem;
+}
+.formdelevery textarea {
+    resize: none;
+    height: 10rem;
+    line-height: 1.5rem;
+}
+@media (max-width: 35em) {
+    .formdelevery textarea {
+        height: 2.5rem;
+        margin-bottom: 1rem;
+        line-height: 2rem;
+   }
+}
+.formdelevery .closeFormLabel, .formdelevery .sendForm {
+    position: absolute;
+    bottom: 1rem;
+    width: 40%;
+    margin: 0 5%;
+    right: 0;
+    text-align: center;
+    border: 1px solid #000;
+    padding: 0.5rem;
+    background: inherit;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: background-color 0.5s ease, border-color 0.5s ease;
+    color: black;
+}
+.formdelevery .closeFormLabel:hover, .formdelevery .sendForm:hover, .formdelevery .closeFormLabel:focus, .formdelevery .sendForm:focus {
+    background-color: #4CAF50;
+    border-color: #333;
+}
+@media (max-width: 35em) {
+    .formdelevery .closeFormLabel, .formdelevery .sendForm {
+        position: relative;
+        width: 90%;
+        left: 0;
+        margin-top: 1em;
+   }
+}
+.formdelevery .closeFormLabel {
+    left: 0;
+}
+@media (max-width: 35em) {
+    .formdelevery .closeFormLabel {
+        bottom: 1rem;
+   }
+}
+input.showForm {
+    display: none;
+}
+input.showForm:checked + .formdelevery {
+    width: 88%;
+    height: 65%;
+    box-shadow: 4px 5px 5px 5px rebeccapurple;
+    overflow: auto;
+    transition: width 0.5s ease, height 0.5s ease 0.5s;
+    margin-top: -29%;
+    margin-left: -19%;
+}
+.showFormLabel {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+    width: 50%;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #333;
+    border: 1px solid #999;
+    background: inherit;
+    z-index: 1;
+    transition: background-color 0.5s ease, border-color 0.5s ease;
+}
+.showFormLabel:hover, .showFormLabel:focus {
+    background-color: #e5e5e5;
+    border-color: #333;
+}
+@media (max-width: 35em) {
+    .showFormLabel {
+        width: 90%;
+        left: 5%;
+   }
+}
+.formdelevery input[type="text"], .formdelevery input[type="email"], .formdelevery input[type="tel"], .formdelevery textarea ::placeholder{
+    color: black;
+}

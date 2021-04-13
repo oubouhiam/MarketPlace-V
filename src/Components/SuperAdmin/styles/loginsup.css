@@ -1,0 +1,14 @@
+.login,
+.image {
+    min-height: 100vh
+}
+
+.bg-image {
+    background-image: url('../styles/bglogin.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 937px;
+}
+.toast-container{
+    color: black;
+}

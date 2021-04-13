@@ -1,0 +1,81 @@
+.h1-listcommande {
+    text-align:center;
+  }
+  .raw-listcommande {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .photo-listcommande {
+
+    margin-right: 26px;
+    width: 208px;
+    height: 99px;
+
+  }
+  .form-control-listcommande { 
+    width:30%;
+    display: inline-block;
+    margin-right:10px;
+  }
+  .name-listcommande {
+    font-weight: 700;
+  }
+  .expertise-label-listcommande {
+    display:block;
+    font-weight: 700;
+    margin-top:10px;
+  }
+  .btn-more -listcommande{
+    margin-top:10px;
+    width: 100%
+  }
+  .label-listcommande {
+    font-weight: normal;
+  }
+  .list-group-item{
+    background: #eaedf1;
+    border: none;
+  }
+  .list{
+    display: -webkit-inline-box;
+    text-align: center;
+  }
+  .closemodel1{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 6px 129px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .closemodel1:hover{
+    background-color: rebeccapurple;
+  }
+  .savelorder{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 6px 9px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .closemodelorder{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 6px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+.closemodelorder:hover{
+    background-color: rebeccapurple;
+  }
+.savelorder:hover{
+    background-color: rebeccapurple;
+  }
